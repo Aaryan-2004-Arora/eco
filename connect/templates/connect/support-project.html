@@ -1,0 +1,45 @@
+{% extends "connect/layout.html" %}
+
+{% block body %}
+        <section class="support-project">
+            <div class="project-header">
+                <h1>Support the Community Solar Initiative</h1>
+                <p>Your contribution helps install solar panels across community buildings.</p>
+            </div>
+
+            <div class="project-details">
+                <img src="community-solar.jpeg" alt="Community Solar Initiative" style="width: 60%; height: auto; object-fit: cover; margin: 0 auto; display: block;">
+                <h2>About the Project</h2>
+                <p>We aim to raise funds for solar panel installations on various community buildings to promote sustainable energy usage.</p>
+                
+                <h3>Project Goals</h3>
+                <ul>
+                    <li>Install solar panels on at least 10 community buildings within the next year.</li>
+                    <li>Reduce community energy costs by 30% through solar energy adoption.</li>
+                    <li>Educate the community about renewable energy and its benefits.</li>
+                </ul>
+
+                <h3>Impact on the Community</h3>
+                <p>This initiative will not only help in reducing the carbon footprint but will also empower local residents by providing them with a more sustainable energy source. The savings generated from reduced energy costs can be redirected towards community programs and initiatives.</p>
+
+                <h3>Funding Usage</h3>
+                <p>The funds raised will be used for:</p>
+                <ul>
+                    <li>Purchasing and installing solar panels.</li>
+                    <li>Maintenance of the solar systems.</li>
+                    <li>Community workshops and educational materials on solar energy.</li>
+                </ul>
+
+                <h3>Community Voices</h3>
+                <blockquote>
+                    "The Community Solar Initiative is a step towards a greener future. It not only benefits our environment but also our wallets." - Local Resident
+                </blockquote>
+            </div>
+
+            <div class="funding">
+                <h3>Contribute to the Project</h3>
+                <input type="number" id="amount" placeholder="Enter amount" min="1" required>
+                <button id="payButton">Pay Now</button>
+            </div>
+        </section>
+{% endblock %}

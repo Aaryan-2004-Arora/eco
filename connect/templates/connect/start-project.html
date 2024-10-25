@@ -1,0 +1,62 @@
+{% extends "connect/layout.html" %}
+
+{% block body %}
+
+<main class="start-project">    
+    <h1>Start a New Sustainability Project</h1>
+    <p>Submit your project details below to connect with like-minded community members.</p>
+    <!-- <form id="projectForm" action="https://api.staticforms.xyz/submit" method="post"> -->
+    <form id="projectForm" action="">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="projectName">Project Name</label>
+            <input type="text" id="projectName" name="projectName" placeholder="e.g., Solar Plant" required>
+        </div>
+
+        <div class="form-group">
+            <label for="companyName">Project Company Name</label>
+            <input type="text" id="companyName" name="companyName" placeholder="e.g., Green Energy Corp" required>
+        </div>
+
+        <div class="form-group">
+            <label for="idea">Project Idea</label>
+            <input id="idea" name="idea" placeholder="Briefly describe the project idea" required></input>
+        </div>
+
+        <div class="form-group">
+            <label for="about">About the Project</label>
+            <input id="about" name="about" placeholder="Detailed description about the project" required></input>
+        </div>
+
+        <div class="form-group">
+            <label for="amount">Expected Spend</label>
+            <input id="amount" name="amount" placeholder="money" required></input>
+        </div>
+
+        <div class="form-group">
+            <label for="time">Expected Time</label>
+            <input id="time" name="time" placeholder="time" required></input>
+        </div>
+
+        <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="e.g., San Francisco, CA" required>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Project Description</label>
+            <input id="description" name="description" placeholder="Provide additional details about your project" required></input>
+        </div>
+
+        <div class="form-group">
+            <label for="image">Image Link</label>
+            <input type="text">Image link</div>
+        </div>
+      
+
+        <button type="submit" class="cta-button">Submit Project</button>
+    </form>
+</main>
+{% endblock %}
+
+

@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoConnect - Community Sustainability Platform</title>
+    <link rel="stylesheet" href="{% static 'connect/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">EcoConnect</div>
+            <div class="nav-links">
+                <a href="#projects">Projects</a>
+                <a href="{%url 'event' %}">Events</a>
+                <a href="{%url 'index' %}">Partners</a>
+                <a href="{%url 'start_project' %}">Start Project</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block body %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>EcoConnect</h3>
+                <p>Building sustainable communities through collective action</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+                <a href="#privacy">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EcoConnect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
